@@ -1,7 +1,7 @@
-pipeline {    #prebuild
+pipeline {    
     agent any
 
-    stages {      # build
+    stages {      
         stage('Build') {
             steps {
                 sh 'echo This is Build'
@@ -23,7 +23,7 @@ pipeline {    #prebuild
 }
 
 
-post {    #post build
+/* post {    #post build
     always {
         echo "This section runs always"
     }
@@ -35,4 +35,4 @@ post {    #post build
     failure {
         echo "This section run when pipeline failure"
     }
-}
+} */
